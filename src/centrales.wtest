@@ -1,0 +1,9 @@
+import springfield.*
+import centrales.*
+
+describe "Test de Burns" {
+	test "Burns con 10 varillas de uranio produce 1 mkwh en Springfield" {
+		centralAtomica.varillasDeUranio(10)
+		assert.equals(1, centralAtomica.produccionEnergetica(springfield))
+	}
+}
